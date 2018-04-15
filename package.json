@@ -1,0 +1,31 @@
+{
+	"name": "hangya",
+	"version": "1.0.0",
+	"homepage" : "http://andraaspar.github.io/hangya",
+	"private": true,
+	"dependencies": {
+		"@types/jest": "^22.2.3",
+		"@types/node": "^9.6.5",
+		"@types/react": "^16.3.10",
+		"@types/react-dom": "^16.0.5",
+		"@types/react-redux": "^5.0.16",
+		"@types/redux": "^3.6.0",
+		"bulma": "^0.7.0",
+		"gh-pages": "^1.1.0",
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1",
+		"react-redux": "^5.0.7",
+		"react-scripts-ts": "2.15.1",
+		"redux": "^3.7.2",
+		"typescript": "^2.8.1"
+	},
+	"scripts": {
+		"start": "yarn && yarn lint && react-scripts-ts start",
+		"build": "yarn && yarn lint && react-scripts-ts build",
+		"test": "react-scripts-ts test --env=jsdom",
+		"eject": "react-scripts-ts eject",
+		"lint": "tslint --fix -c ./tslint.fix.json --project ./tsconfig.json",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build"
+	}
+}
